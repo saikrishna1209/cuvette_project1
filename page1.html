@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background-color: #FFCD9E;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+ 
+      .left {
+        width: 50%;
+        padding: 20px;
+        font-size: 25x;
+        top: 0;
+      }
+      
+
+      .heading {
+        font-size: 16px;
+        top: 0;
+      }
+      .para{
+        font-size: 15px;
+      }
+
+      .right {
+        width: 50%;
+        text-align: right;
+        padding: 20px;
+      }
+      .rom {
+        font-size: 10px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+      }
+
+      input[type="text"] {
+        width: 200px;
+        padding: 10px;
+        border: 4px solid black;
+        border-radius: 3px;
+        font-size: 16px;
+        margin-top: 12px;
+        margin-right: 8px;
+      }
+
+      button {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      button:hover {
+        background-color: black;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        width: 55%;
+        margin-right: 30px;
+      }
+      .nospam {
+        color: white;
+      }
+      .enter {
+        display: block;
+      }
+
+      .thankyou {
+        display: none;
+      }
+      .social-icons {
+        text-align: center; 
+      }
+      .social-icons a {
+        display: inline-block; 
+        margin: 0 10px; 
+        font-size: 24px;
+        color: rgb(237, 186, 55);
+      }
+      .social-icons a:hover {
+        color: #e4405f; 
+      }
+      footer {
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+      .footer-left {
+        align-items: start;
+    
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="heading">
+          <h1>An insired desighn delivered to</h1>
+          <h1>your inbox every morning</h1>
+        </div>
+        <div class="para">
+        <p>our team scouts the internet for the best desighns,</p>
+        <p>illustrations and art delivers a truly insiring</p>
+        <p>one every day to your inbox</p>
+          </div>
+        <div class="enter">
+          <div class="rom">
+            <h1>show how it look like</h1>
+          </div>
+          <input type="text" placeholder="your email address" required/>
+          <button onclick="showThankYou()">Register now</button>
+        </div>
+        <div class="thankyou">
+          <h2>Thank You!</h2>
+          <h6 class="nospam">Free-No Spam-No Data Sharing</h6>
+        </div>
+      </div>
+      <div class="right">
+        <img src="pic.png" alt="Image" />
+      </div>
+    </div>
+    <footer>
+      <div class="footer-left">
+        <h4>prompt generator</h4>
+        <h4>dweep daily</h4>
+        <h4>all contributors</h4>
+        <h4>your data on dweep.io</h4>
+        <h4>contribute to dweep</h4>
+      </div>
+      <div class="footer-right">
+        <h4>dweep.io</h4>
+        <h4>made with love in india</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+        <h4>hello@dweep.io</h4>
+      </div>
+    </footer>
+    <script>
+      function showThankYou() {
+        var enterDiv = document.querySelector(".enter");
+        var thankYouDiv = document.querySelector(".thankyou");
+        enterDiv.style.display = "none";
+        thankYouDiv.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
